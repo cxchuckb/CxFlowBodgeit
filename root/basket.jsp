@@ -52,12 +52,6 @@ function decQuantity (prodid) {
 			
 		// Well, apart from checking to see if they've accessed someone elses basket ;)
 
-		// *** Replaced vulnerable code ***
-		//Statement stmt = conn.createStatement();
-		//try {
-		//	ResultSet rs = stmt.executeQuery("SELECT * FROM Baskets WHERE basketid = " + basketId);
-
-		// *** Updated Code ***
 		PreparedStatement preparedStatement = con.prepareStatement(sql);
         try {
         //ResultSet rs = stmt.executeQuery("SELECT * FROM Baskets WHERE basketid = " + basketId);
